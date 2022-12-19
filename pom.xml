@@ -18,7 +18,7 @@
 
     <modules>
         <module>server</module>
-        <module>client</module>
+        <module>clientpart</module>
     </modules>
 
 </project>

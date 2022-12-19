@@ -50,8 +50,7 @@ public class BalanceServiceImpl implements BalanceService {
         changeBalanceCounter.inc();
 
         Balance balance = balanceRepository.findById(id).orElseThrow();
-        long l = balance.getAmount() + amount;
-        balance.setAmount(l);
+        balance.setAmount(balance.getAmount() + amount);
 
         balanceRepository.save(balance);
     }
